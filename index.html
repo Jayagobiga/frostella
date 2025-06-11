@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frostella</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffafc;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 20px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      line-height: 1.6;
+      margin: 0 10px 40px;
+    }
+
+    .logo {
+      width: 30%;
+      max-width: 400px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav a {
+      color: #d63384;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+    }
+
+    .button {
+      background-color: #d63384;
+      color: white;
+      padding: 14px 28px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .centered {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .dessert-images img {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .video-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .video-container video {
+      width: 90%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    hr {
+      width: 60%;
+      margin: 50px auto;
+    }
+
+    @media (min-width: 768px) {
+      .dessert-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .dessert-images img {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="centered">
+    <img src="logo.png" class="logo" alt="Frostella Logo">
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <h1>A New Adventure in Desserts</h1>
+
+  <p>
+    From creamy ice creams to fluffy cupcakes, melt-in-your-mouth cookies to beautifully baked cakes – we’ve got it all.<br>
+    Every treat is handcrafted with love, a sprinkle of joy, and a dash of indulgence.<br>
+    Come, take a bite – and let Frostella make your day extra delightful!
+  </p>
+
+  <div class="centered">
+    <a href="https://en.wikipedia.org/wiki/Dessert" class="button">Read more</a>
+  </div>
+
+  <hr>
+
+  <h1>Our Core Desserts</h1>
+
+  <div class="dessert-images centered">
+    <img src="Image1.png" alt="Cakes and Cupcakes">
+    <img src="Image2.png" alt="Waffles and Pancakes">
+    <img src="Image3.png" alt="Ice Creams and Cookies">
+  </div>
+
+  <h1>Services</h1>
+
+  <div class="video-container">
+    <video src="videos/frostella.mp4" controls></video>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frostella Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffafc;
+      color: #333;
+    }
+
+    .logo {
+      width: 30%;
+      max-width: 200px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav a {
+      color: brown;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      margin: 30px 20px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      line-height: 1.6;
+      margin: 0 10px 40px;
+    }
+
+    .button {
+      font-size: 20px;
+      background-color: brown;
+      padding: 14px 28px;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .centered {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .dessert-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 10px;
+    }
+
+    .dessert-images img {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    hr {
+      width: 60%;
+      margin: 50px auto;
+    }
+
+    @media (min-width: 768px) {
+      .dessert-images img {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="centered">
+    <img src="logo.png" class="logo" alt="Frostella Logo">
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <h1>Frostella Menu</h1>
+
+  <p>
+    Explore our menu of handcrafted delights — from fluffy cakes and frosted cupcakes to crispy waffles and creamy ice creams.<br>
+    Every bite at Frostella is made to melt your heart!
+  </p>
+
+  <div class="centered">
+    <a href="https://en.wikipedia.org/wiki/Dessert" class="button">Read more</a>
+  </div>
+
+  <hr>
+
+  <div class="dessert-images">
+    <img src="bakery.png" alt="Cakes & Cupcakes">
+    <img src="waffle.png" alt="Waffles & Pancakes">
+    <img src="icecream.png" alt="Ice Creams & Cookies">
+  </div>
+
+</body>
+</html>
