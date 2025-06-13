@@ -77,6 +77,44 @@
       width: 60%;
       margin: 50px auto;
     }
+    .lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .lightbox-img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      font-size: 60px;
+      color: white;
+      user-select: none;
+      padding: 10px;
+    }
+    
+    .prev { left: 20px; }
+    .next { right: 20px; }
 
     @media (min-width: 768px) {
       .dessert-images img {
@@ -111,10 +149,40 @@
   <hr>
 
   <div class="dessert-images">
-    <img src="bakery.png" alt="Cakes & Cupcakes">
-    <img src="waffle.png" alt="Waffles & Pancakes">
-    <img src="icecream.png" alt="Ice Creams & Cookies">
+   <img src="bakery.png" alt="Cakes & Cupcakes" onclick="openModal(0)">
+   <img src="waffle.png" alt="Waffles & Pancakes" onclick="openModal(1)">
+   <img src="icecream.png" alt="Ice Creams & Cookies" onclick="openModal(2)">
   </div>
-
+  
+  <div id="lightbox" style="display:none;" class="lightbox">
+   <span class="close" onclick="closeModal()">&times;</span>
+   <img class="lightbox-img" id="lightbox-img">
+   <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+   <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+    <script>
+    const images = [
+      "bakery.png",
+      "waffle.png",
+      "icecream.png"
+    ];
+  
+    let currentIndex = 0;
+  
+    function openModal(index) {
+      currentIndex = index;
+      document.getElementById('lightbox-img').src = images[currentIndex];
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+  
+    function closeModal() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  
+    function changeSlide(direction) {
+      currentIndex = (currentIndex + direction + images.length) % images.length;
+      document.getElementById('lightbox-img').src = images[currentIndex];
+    }
+  </script>
 </body>
 </html>
