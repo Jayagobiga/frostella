@@ -94,6 +94,65 @@
         width: 30%;
       }
     }
+    .flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 280px;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flip-back {
+  background-color: #d63384;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .dessert-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flip-card {
+    width: 30%;
+  }
+}
   </style>
 </head>
 <body>
@@ -125,10 +184,40 @@
   <h1>Our Core Desserts</h1>
 
   <div class="dessert-images centered">
-    <img src="Image1.png" alt="Cakes and Cupcakes">
-    <img src="Image2.png" alt="Waffles and Pancakes">
-    <img src="Image3.png" alt="Ice Creams and Cookies">
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="Image1.png" alt="Cakes and Cupcakes">
+      </div>
+      <div class="flip-back">
+        <p>Amazing Cakes and Cupcakes</p>
+      </div>
+    </div>
   </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="Image2.png" alt="Waffles and Pancakes">
+      </div>
+      <div class="flip-back">
+        <p>Delicious Waffles and Pancakes</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="Image3.png" alt="Cookies and Ice Creams">
+      </div>
+      <div class="flip-back">
+        <p>Irresistible Cookies and Ice Creams</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <h1>Services</h1>
 
