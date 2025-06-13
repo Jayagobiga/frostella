@@ -112,6 +112,59 @@
       user-select: none;
       padding: 10px;
     }
+    .order-section {
+  padding: 30px 20px;
+}
+
+.order-section h2 {
+  text-align: left;
+  margin-top: 30px;
+  color: brown;
+}
+
+.order-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.order-item {
+  background-color: #fff0f5;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.order-item p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.order-item span {
+  font-weight: bold;
+  color: #d63384;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.order-item button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.order-item button:hover {
+  background-color: #b1206a;
+}
+
     
     .prev { left: 20px; }
     .next { right: 20px; }
@@ -160,6 +213,115 @@
    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
    <a class="next" onclick="changeSlide(1)">&#10095;</a>
   </div>
+  <h1 style="text-align: center;">Order Online</h1>
+
+<div class="order-section">
+
+  <!-- Cakes -->
+  <h2>Cakes</h2>
+  <div class="order-grid">
+    <div class="order-item">
+      <p>Black Forest Cake</p>
+      <span>Rs 380</span>
+      <button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Strawberry Cake</p>
+      <span>Rs 400</span>
+      <button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Chocolate Truffle</p>
+      <span>Rs 540</span>
+      <button>Order</button>
+    </div>
+  </div>
+
+  <!-- Cupcakes -->
+  <h2>Cupcakes</h2>
+  <div class="order-grid">
+    <div class="order-item">
+      <p>Chocolate Cupcake</p>
+      <span>Rs 90</span>
+      <button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Strawberry Cupcake</p>
+      <span>Rs 85</span>
+      <button>Order</button>
+    </div>
+  </div>
+
+  <!-- Waffles -->
+  <h2>Waffles</h2>
+  <div class="order-grid">
+    <div class="order-item">
+      <p>Oreo Waffle</p>
+      <span>Rs 150</span>
+      <button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Strawberry Waffle</p>
+      <span>Rs 145</span>
+      <button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Nutella Waffle</p>
+      <span>Rs 160</span>
+      <button>Order</button>
+    </div>
+  </div>
+
+  <!-- Cookies -->
+  <h2>Cookies</h2>
+  <div class="order-grid">
+    <div class="order-item">
+      <p>Choco Cookie</p>
+      <span>Rs 60</span>
+      <button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Strawberry Cookie</p>
+      <span>Rs 70</span>
+      <button>Order</button>
+    </div>
+  </div>
+
+  <!-- Ice Creams -->
+  <h2>Ice Creams</h2>
+  <div class="order-grid">
+    <div class="order-item">
+      <p>Vanilla</p><span>Rs 40</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Blue Berry</p><span>Rs 60</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Chocolate</p><span>Rs 50</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Strawberry</p><span>Rs 40</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Caramel</p><span>Rs 50</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Banana</p><span>Rs 40</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Mango</p><span>Rs 50</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Green Tea</p><span>Rs 60</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Tiramisu</p><span>Rs 70</span><button>Order</button>
+    </div>
+    <div class="order-item">
+      <p>Brown Sugar</p><span>Rs 60</span><button>Order</button>
+    </div>
+  </div>
+</div>
     <script>
     const images = [
       "bakery.png",
